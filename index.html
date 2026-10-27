@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0756a5">
+  <meta name="description" content="Jazeera University Student Complaint and Feedback System">
+  <title>Jazeera University | Student Complaint &amp; Feedback</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <img class="university-logo" src="assets/jazeera-logo.png" alt="Jazeera University official logo">
+      <div class="header-copy">
+        <p class="eyebrow">JAZEERA UNIVERSITY</p>
+        <h1>Student Complaint &amp; Feedback System</h1>
+        <p class="subtitle">Your voice matters. Help us improve the university environment.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="form-card" aria-labelledby="form-title">
+      <div class="section-heading">
+        <span class="heading-icon" aria-hidden="true">✎</span>
+        <div>
+          <h2 id="form-title">Submit Your Complaint / Feedback</h2>
+          <p>Complete the form, then choose how you want to send it.</p>
+        </div>
+      </div>
+
+      <form id="complaintForm" novalidate>
+        <div class="field">
+          <label for="studentName">Student Name <span class="required">*</span></label>
+          <input id="studentName" name="studentName" type="text" placeholder="Enter your full name" autocomplete="name" required maxlength="120">
+          <small class="field-error" id="studentNameError"></small>
+        </div>
+
+        <div class="field-grid">
+          <div class="field">
+            <label for="faculty">Faculty <span class="required">*</span></label>
+            <select id="faculty" name="faculty" required>
+              <option value="">Select Faculty</option>
+            </select>
+            <small class="field-error" id="facultyError"></small>
+          </div>
+          <div class="field">
+            <label for="department">Department <span class="required">*</span></label>
+            <select id="department" name="department" required disabled>
+              <option value="">Select Faculty first</option>
+            </select>
+            <small class="field-error" id="departmentError"></small>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="batch">Batch <span class="required">*</span></label>
+          <select id="batch" name="batch" required disabled>
+            <option value="">Select Department first</option>
+          </select>
+          <small class="field-hint" id="batchHint">Choose a faculty and department to see available batches.</small>
+          <small class="field-error" id="batchError"></small>
+        </div>
+
+        <div class="field">
+          <label for="category">Complaint Category <span class="required">*</span></label>
+          <select id="category" name="category" required>
+            <option value="">Select Complaint Category</option>
+            <option>Student-to-Student Issues</option>
+            <option>Teacher-Student Issues</option>
+            <option>University Facilities and Equipment</option>
+            <option>General University Issues</option>
+            <option>Examination Fees</option>
+            <option>Other Issues</option>
+          </select>
+          <small class="field-error" id="categoryError"></small>
+        </div>
+
+        <div class="field">
+          <div class="label-row">
+            <label for="details">Complaint Details <span class="required">*</span></label>
+            <span id="charCount" class="char-count">0 / 1000</span>
+          </div>
+          <textarea id="details" name="details" rows="6" maxlength="1000" placeholder="Describe your complaint or feedback in detail..." required></textarea>
+          <small class="field-error" id="detailsError"></small>
+        </div>
+
+        <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+
+        <div class="submit-actions">
+          <button type="button" id="whatsappButton" class="button button-whatsapp">
+            <span aria-hidden="true">◉</span> Send via WhatsApp
+          </button>
+          <button type="button" id="emailButton" class="button button-email">
+            <span aria-hidden="true">✉</span> Send via Email
+          </button>
+        </div>
+        <p class="privacy-note">WhatsApp and email open with your message prepared. You must press Send in the selected application to submit your complaint.</p>
+      </form>
+    </section>
+
+    <aside class="sidebar">
+      <section class="info-card">
+        <h2><span aria-hidden="true">ⓘ</span> How It Works</h2>
+        <ol class="steps">
+          <li><span>1</span><p>Enter your student information and complaint details.</p></li>
+          <li><span>2</span><p>Choose to send your complaint through WhatsApp or Email.</p></li>
+          <li><span>3</span><p>Review the prepared message and press Send in the selected application.</p></li>
+        </ol>
+      </section>
+      <section class="info-card categories-card">
+        <h2><span aria-hidden="true">▤</span> Complaint Categories</h2>
+        <ul class="category-list">
+          <li>Student-to-Student Issues</li>
+          <li>Teacher-Student Issues</li>
+          <li>University Facilities and Equipment</li>
+          <li>General University Issues</li>
+          <li>Examination Fees</li>
+          <li>Other Issues</li>
+        </ul>
+      </section>
+      <section class="info-card note-card">
+        <h2>Before You Submit</h2>
+        <p>Please provide accurate information and describe the issue clearly. Avoid including passwords or other sensitive account information.</p>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <strong>Jazeera University — Student Complaint &amp; Feedback System</strong>
+    <p>Your voice matters. Help us improve the university environment.</p>
+  </footer>
+</body>
+</html>
