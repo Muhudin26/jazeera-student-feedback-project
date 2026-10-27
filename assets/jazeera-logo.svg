@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Jazeera University logo</title>
+  <desc id="desc">A blue circular emblem with a white stylized J and university initials.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d67c3"/>
+      <stop offset="100%" stop-color="#083e7e"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#bg)"/>
+  <circle cx="100" cy="100" r="78" fill="#ffffff" opacity="0.08"/>
+  <path d="M68 52h26c28 0 42 16 42 40v14c0 24-18 38-42 38h-26a12 12 0 0 1-12-12v-8a12 12 0 0 1 12-12h26c8 0 16-5 16-13V92c0-8-8-13-16-13H68a12 12 0 0 1-12-12V59a12 12 0 0 1 12-12z" fill="#ffffff" opacity="0.96"/>
+  <path d="M110 52h22c12 0 22 9 22 20v56c0 14-11 25-25 25h-19v-18h19c4 0 7-3 7-7V76c0-4-3-7-7-7h-18V52z" fill="#ffffff" opacity="0.96"/>
+  <path d="M126 119h18v18h-18z" fill="#0d67c3"/>
+</svg>
